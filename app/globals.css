@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color system — OKLCH */
+  --bg-parchment:  oklch(96.5% 0.010 78);
+  --bg-warm:       oklch(92.0% 0.016 75);
+  --bg-dark:       oklch(19.0% 0.022 48);
+  --text-primary:  oklch(17.0% 0.020 48);
+  --text-muted:    oklch(48.0% 0.030 50);
+  --red-primary:   oklch(41.0% 0.170 26);
+  --red-hover:     oklch(35.0% 0.155 26);
+  --navy:          oklch(28.0% 0.088 255);
+  --gold:          oklch(72.0% 0.138 83);
+  --border:        oklch(84.0% 0.022 78);
+  --surface:       oklch(99.0% 0.005 78);
+}
+
+/* ─── Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-parchment);
+  color: var(--text-primary);
+  font-family: var(--font-lato), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.65;
+}
+
+/* ─── Barber pole divider ───────────────────────────── */
+.barber-rule {
+  height: 4px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--red-primary)   0px  8px,
+    var(--bg-parchment) 8px 16px,
+    var(--navy)         16px 24px,
+    var(--bg-parchment) 24px 32px
+  );
+  border: none;
+}
+
+.barber-rule-sm {
+  height: 3px;
+  width: 64px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--red-primary)   0px  6px,
+    var(--bg-parchment) 6px 12px,
+    var(--navy)         12px 18px,
+    var(--bg-parchment) 18px 24px
+  );
+}
+
+/* ─── Section spacing ───────────────────────────────── */
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* ─── Scroll reveal ─────────────────────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal="left"]  { transform: translateX(-30px); }
+[data-reveal="right"] { transform: translateX(30px); }
+[data-reveal="fade"]  { transform: none; }
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+[data-reveal].delay-1 { transition-delay: 0.1s; }
+[data-reveal].delay-2 { transition-delay: 0.2s; }
+[data-reveal].delay-3 { transition-delay: 0.3s; }
+[data-reveal].delay-4 { transition-delay: 0.4s; }
+[data-reveal].delay-5 { transition-delay: 0.5s; }
+
+/* ─── Typography helpers ────────────────────────────── */
+.heading-xl {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.heading-lg {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heading-md {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.eyebrow {
+  font-family: var(--font-lato), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red-primary);
+}
+
+/* ─── Button styles ─────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--red-primary);
+  color: oklch(97% 0.005 78);
+  font-family: var(--font-lato), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, transform 0.15s ease-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--red-hover);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: oklch(95% 0.008 78);
+  font-family: var(--font-lato), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  border: 1.5px solid oklch(75% 0.012 78);
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s ease-out, color 0.2s ease-out, transform 0.15s ease-out;
+}
+
+.btn-outline:hover {
+  border-color: oklch(95% 0.008 78);
+  transform: translateY(-1px);
+}
+
+/* ─── Booking panel overlay ─────────────────────────── */
+.booking-overlay {
+  position: fixed;
+  inset: 0;
+  background: oklch(10% 0.01 50 / 0.55);
+  z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.booking-panel {
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  background: var(--surface);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+/* ─── Gallery lightbox ──────────────────────────────── */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: oklch(8% 0.01 50 / 0.92);
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease-out;
+  padding: 1rem;
+}
+
+/* ─── Image placeholder ─────────────────────────────── */
+.img-placeholder {
+  background: var(--bg-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-family: var(--font-lato), system-ui, sans-serif;
+  text-align: center;
+  padding: 1rem;
+}

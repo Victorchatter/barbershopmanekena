@@ -1,0 +1,182 @@
+{
+  "lang": "en",
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "location": "Location",
+    "book": "Book Now"
+  },
+  "hero": {
+    "eyebrow": "Barbershop in Hristo Botev, Varna",
+    "heading": "Barber shop\nManekena",
+    "tagline": "Your neighborhood barbershop — 4.8★ from local regulars",
+    "cta_book": "Book an Appointment",
+    "cta_call": "Call Now"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "heading": "Craft you can trust",
+    "body": "At Barber shop Manekena, we believe a great haircut isn't a luxury — it's a standard. We've been serving the Hristo Botev neighborhood for years with honest craft, genuine care, and prices that leave something in your pocket. Our clients keep coming back not because they have no choice, but because the result is worth it.",
+    "values": [
+      {
+        "title": "Friendly atmosphere",
+        "desc": "A place where every client feels welcome from the moment they walk in"
+      },
+      {
+        "title": "Skilled hands",
+        "desc": "A perfect cut and a precisely shaped beard — every single time"
+      },
+      {
+        "title": "Fair prices",
+        "desc": "Quality you can feel, at a price that makes sense"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "heading": "What we do",
+    "subheading": "Contact us directly for current pricing",
+    "items": [
+      {
+        "id": "haircut",
+        "name": "Men's Haircut",
+        "desc": "Classic or modern style — clean finish, precise work every time"
+      },
+      {
+        "id": "beard-trim",
+        "name": "Beard Trim",
+        "desc": "Clean lines, balanced shape, sharp look"
+      },
+      {
+        "id": "beard-cond",
+        "name": "Beard Conditioning",
+        "desc": "Deep conditioning for a softer, healthier, shinier beard"
+      },
+      {
+        "id": "beard-dye",
+        "name": "Beard Dyeing",
+        "desc": "Precise application with a natural, clean finish"
+      },
+      {
+        "id": "fade",
+        "name": "Fade",
+        "desc": "Smooth gradient from skin to your desired length"
+      },
+      {
+        "id": "curly",
+        "name": "Curly Hair Cut",
+        "desc": "Specialist cutting technique tailored to your curl pattern"
+      },
+      {
+        "id": "color",
+        "name": "Hair Coloring",
+        "desc": "Full color treatment with care for both result and hair health"
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "Our team",
+    "heading": "Hands you can trust",
+    "body": "Behind every great result are hands that know their craft. At Manekena, we work with attention to detail — we don't rush, because good work never should be. Come meet us in person at your next visit."
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "heading": "Our work"
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "heading": "What clients say",
+    "rating_value": "4.8",
+    "rating_label": "Google rating",
+    "reviews_count": "22 reviews",
+    "testimonials": [
+      {
+        "text": "Excellent barbershop. Precise work, pleasant atmosphere, and prices you won't regret. I recommend it to everyone.",
+        "author": "Satisfied client"
+      },
+      {
+        "text": "I've been coming here for two years. Every time I leave looking perfect. Number one barbershop in Varna for me.",
+        "author": "Regular client"
+      },
+      {
+        "text": "Friendly service and skilled hands. Meticulous attention to both hair and beard. I'll definitely be back.",
+        "author": "Client"
+      }
+    ]
+  },
+  "location": {
+    "eyebrow": "Location",
+    "heading": "Find us",
+    "address_label": "Address",
+    "address": "25 Kapitan Raycho Nikolov St., Hristo Botev / Odesos, 9000 Varna, Bulgaria",
+    "hours_label": "Opening hours",
+    "phone_label": "Phone",
+    "amenities_label": "Amenities",
+    "wifi": "Free Wi-Fi",
+    "toilet": "On-site restroom",
+    "appointment": "Appointment recommended",
+    "kids": "Kid-friendly",
+    "directions": "Get directions",
+    "hours": [
+      { "day": "Monday",    "hours": "10:00 – 18:00" },
+      { "day": "Tuesday",   "hours": "10:00 – 18:00" },
+      { "day": "Wednesday", "hours": "10:00 – 18:00" },
+      { "day": "Thursday",  "hours": "10:00 – 18:00" },
+      { "day": "Friday",    "hours": "10:00 – 18:00" },
+      { "day": "Saturday",  "hours": "10:00 – 18:00" },
+      { "day": "Sunday",    "hours": "Confirm with us" }
+    ]
+  },
+  "booking": {
+    "title": "Book an appointment",
+    "step_labels": ["Service", "Date & time", "Contact", "Confirm"],
+    "step1_heading": "Choose service(s)",
+    "step2_heading": "Pick a date and time",
+    "step3_heading": "Your details",
+    "step4_heading": "Review",
+    "step4_subheading": "Check the details before confirming",
+    "next": "Next",
+    "back": "Back",
+    "confirm": "Confirm booking",
+    "submitting": "Sending...",
+    "name_label": "Your name",
+    "name_placeholder": "Full name",
+    "phone_label": "Phone",
+    "phone_placeholder": "089 XXX XXXX",
+    "email_label": "Email",
+    "email_placeholder": "Optional",
+    "notes_label": "Notes",
+    "notes_placeholder": "Optional",
+    "summary_services": "Services",
+    "summary_date": "Date",
+    "summary_time": "Time",
+    "summary_contact": "Contact",
+    "success_title": "Request sent!",
+    "success_body": "We'll be in touch shortly to confirm your appointment. You can also confirm directly via WhatsApp.",
+    "success_whatsapp": "Confirm via WhatsApp",
+    "success_ics": "Add to calendar",
+    "success_close": "Close",
+    "error_generic": "Something went wrong. Please try again.",
+    "validation": {
+      "select_service": "Please select at least one service",
+      "select_date": "Please select a date",
+      "select_time": "Please select a time",
+      "name_required": "Name is required",
+      "phone_required": "Phone number is required",
+      "phone_invalid": "Enter a valid Bulgarian number (08...)",
+      "no_slots": "No available slots for this date"
+    }
+  },
+  "footer": {
+    "tagline": "Your neighborhood barbershop in the heart of Varna",
+    "social_label": "Follow us",
+    "legal": "All rights reserved",
+    "credit": "Website by Orvexis IV",
+    "gdpr": "This site does not collect personal data except when booking an appointment.",
+    "address": "25 Kapitan Raycho Nikolov St., 9000 Varna"
+  },
+  "phone": "089 386 6364",
+  "whatsapp_number": "359893866364"
+}
