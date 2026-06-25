@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
+import Image from 'next/image'
 
 export default function Team() {
   const { t } = useLanguage()
@@ -53,52 +54,24 @@ export default function Team() {
             </p>
           </div>
 
-          {/* Team photo placeholder — replace with <Image> of shop/team */}
+          {/* Barber photo */}
           <div
             data-reveal="right"
             style={{
-              aspectRatio: '4 / 5',
-              backgroundColor: 'oklch(25% 0.02 48)',
-              border: '1px solid oklch(30% 0.02 48)',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '0.75rem',
+              position: 'relative',
+              aspectRatio: '1 / 1',
               borderRadius: '2px',
+              overflow: 'hidden',
               maxWidth: '420px',
             }}
           >
-            {/* Decorative barber scissors SVG */}
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="oklch(45% 0.02 50)"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden
-            >
-              <circle cx="6" cy="6" r="3" />
-              <circle cx="6" cy="18" r="3" />
-              <line x1="20" y1="4" x2="8.12" y2="15.88" />
-              <line x1="14.47" y1="14.48" x2="20" y2="20" />
-              <line x1="8.12" y1="8.12" x2="12" y2="12" />
-            </svg>
-            <p
-              style={{
-                color: 'oklch(40% 0.015 50)',
-                fontSize: '0.75rem',
-                textAlign: 'center',
-                padding: '0 2rem',
-                lineHeight: 1.5,
-              }}
-            >
-              {/* placeholder note — visible only in dev */}
-              Add team photo: /public/images/team/team-01.webp
-            </p>
+            <Image
+              src="/images/team/team-01.jpg"
+              alt="Барберът — Barber shop Manekena"
+              fill
+              sizes="(max-width: 768px) 100vw, 420px"
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+            />
           </div>
         </div>
       </div>

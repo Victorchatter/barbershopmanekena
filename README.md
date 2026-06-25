@@ -85,8 +85,8 @@ Set `NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX` in Vercel environment variables with the r
 - [x] Sticky mobile CTA bar (Call / WhatsApp / Book)
 - [x] LocalBusiness JSON-LD (BarberShop)
 - [x] GA4 placeholder
-- [ ] Hero photo (placeholder — needs real image)
-- [ ] Gallery photos (9 slots — needs real images)
+- [x] Hero photo (hero-01.jpg — shop interior with MANEKENA sign)
+- [x] Gallery photos (9 slots filled from Facebook — real shop photos)
 - [ ] Full weekly hours confirmed by client
 - [ ] Official name spelling confirmed by client
 - [ ] SMTP configured for email notifications

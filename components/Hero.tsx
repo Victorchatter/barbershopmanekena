@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useState } from 'react'
+import Image from 'next/image'
 import BookingWizard from './BookingWizard'
 
 export default function Hero() {
@@ -18,32 +19,20 @@ export default function Hero() {
           display: 'flex',
           alignItems: 'center',
           overflow: 'hidden',
-          /*
-           * Replace this gradient with:
-           *   background-image: url('/images/hero/hero-01.webp')
-           * once the real shop photo is ready.
-           */
-          background: `
-            radial-gradient(ellipse at 30% 60%, oklch(30% 0.04 50) 0%, transparent 55%),
-            radial-gradient(ellipse at 80% 20%, oklch(24% 0.03 30) 0%, transparent 50%),
-            oklch(18% 0.022 48)
-          `,
+            background: 'oklch(18% 0.022 48)',
         }}
       >
-        {/* Background image (uncomment and add file to /public/images/hero/hero-01.webp) */}
-        {/*
         <Image
-          src="/images/hero/hero-01.webp"
+          src="/images/hero/hero-01.jpg"
           alt="Barber shop Manekena interior"
           fill
           priority
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          style={{ objectFit: 'cover', objectPosition: 'center top' }}
         />
         <div style={{
           position: 'absolute', inset: 0,
           background: 'linear-gradient(to right, oklch(10% 0.02 48 / 0.85) 0%, oklch(10% 0.02 48 / 0.4) 100%)'
         }} />
-        */}
 
         {/* Decorative barber pole stripe — vertical, far right */}
         <div

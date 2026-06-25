@@ -11,15 +11,15 @@ import { useState } from 'react'
  * Aspect ratio is approximate based on typical barbershop photo orientations.
  */
 const GALLERY_SLOTS = [
-  { src: '/images/gallery/gallery-01.webp', label: 'Exterior / shop front',     aspect: '4/3'  },
-  { src: '/images/gallery/gallery-02.webp', label: 'Haircut in progress',       aspect: '3/4'  },
-  { src: '/images/gallery/gallery-03.webp', label: 'Interior / barber chair',   aspect: '4/3'  },
-  { src: '/images/gallery/gallery-04.webp', label: 'Beard trim result',         aspect: '3/4'  },
-  { src: '/images/gallery/gallery-05.webp', label: 'Fade / detail shot',        aspect: '4/3'  },
-  { src: '/images/gallery/gallery-06.webp', label: 'Hair coloring / result',    aspect: '3/4'  },
-  { src: '/images/gallery/gallery-07.webp', label: 'Shop tools / atmosphere',   aspect: '4/3'  },
-  { src: '/images/gallery/gallery-08.webp', label: 'Satisfied client / result', aspect: '3/4'  },
-  { src: '/images/gallery/gallery-09.webp', label: 'Team at work',              aspect: '4/3'  },
+  { src: '/images/gallery/gallery-01.jpg', label: 'Barber Shop Manekena — лого на витрина',  aspect: '3/4'  },
+  { src: '/images/gallery/gallery-02.jpg', label: 'Прясно подстригване — изглед от огледало', aspect: '3/4'  },
+  { src: '/images/gallery/gallery-03.jpg', label: 'Фейд и брада — страничен профил',          aspect: '3/4'  },
+  { src: '/images/gallery/gallery-04.jpg', label: 'Клиент след подстригване — вечер',         aspect: '3/4'  },
+  { src: '/images/gallery/gallery-05.jpg', label: 'Ръцете на бербера в работа',               aspect: '1/1'  },
+  { src: '/images/gallery/gallery-06.jpg', label: 'Фейд с дизайн — мълния',                   aspect: '4/5'  },
+  { src: '/images/gallery/gallery-07.jpg', label: 'Фейд с дизайн — знак Manekena',            aspect: '4/5'  },
+  { src: '/images/gallery/gallery-08.jpg', label: 'Прецизен фейд — пред знака',               aspect: '4/5'  },
+  { src: '/images/gallery/gallery-09.jpg', label: 'Детско подстригване с дизайн',             aspect: '1/1'  },
 ]
 
 type Slot = typeof GALLERY_SLOTS[number]
